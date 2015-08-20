@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_blue"
+    android:id="@+id/root" >
+  <include
+        android:id="@+id/header"
+        
+        layout="@layout/mainheader_layout_sub" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Two Wheeler"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Four Wheeler"
+                android:textColor="@color/white" 
+                android:textSize="20dp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+             />
+    </LinearLayout>
+
+</LinearLayout>

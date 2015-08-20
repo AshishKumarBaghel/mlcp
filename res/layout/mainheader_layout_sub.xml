@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_head"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/gradient_blue" >
+<!-- android:layout_height="@dimen/height" -->
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+           android:layout_above="@+id/main_root1"
+           android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/width"
+            android:layout_height="fill_parent"
+          android:background="@color/transparent"
+ android:contentDescription="@string/desc"
+            android:src="@drawable/ico_back" />
+
+        
+      
+        
+        
+        
+        <LinearLayout
+            android:layout_width="@dimen/divider_size"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:layout_weight="1"
+     >
+        
+        <ImageButton
+            android:id="@+id/btnImg_Settings1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ic_launcher" 
+            android:layout_marginLeft="0dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:tag="bold"
+            android:text="@string/main_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge" /> <!-- android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge" -->
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/divider_size"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="@dimen/width"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+android:contentDescription="@string/desc"
+            android:src="@drawable/ic_menu_refresh" />
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/main_root1"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/offwhite"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:tag="bold"
+        android:text="MLCP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tex_size_xlarge"
+        android:textStyle="bold" />
+</LinearLayout>
+    
+</RelativeLayout>

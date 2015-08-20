@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<Button
+android:id="@+id/angry_btn"
+
+android:text="Button"
+android:textColor="#FFFFFF"
+android:textSize="30sp"
+
+android:layout_width="270dp"
+android:layout_height="60dp"
+android:background="@drawable/buttonshape"
+android:shadowColor="#A8A8A8"
+android:shadowDx="0"
+android:shadowDy="0"
+android:shadowRadius="5"
+/>
+
+<EditText
+            android:id="@+id/inputSearchEditText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:hint="Search text"
+            android:inputType="text"
+            android:background="@drawable/edittextstyle"/>
+
+</LinearLayout>

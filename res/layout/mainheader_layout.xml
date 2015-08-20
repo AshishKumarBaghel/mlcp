@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_head"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/gradient_blue" >
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divider_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_46"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_root1"
+        android:orientation="horizontal" 
+        >
+
+        <!-- <ImageButton
+            android:id="@+id/btnImg_Settings"
+            android:layout_width="@dimen/width"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ic_launcher" /> -->
+
+        <!-- <LinearLayout
+            android:layout_width="@dimen/divider_size"
+            android:layout_height="fill_parent"
+            android:background="@drawable/line" >
+        </LinearLayout> -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:tag="bold"
+            android:text="@string/main_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge" />
+<ImageButton
+            android:id="@+id/btnImg_Settings"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:contentDescription=""
+            android:src="@drawable/ic_launcher" 
+            android:visibility="gone"/>
+
+       <!--  <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/line" >
+        </LinearLayout>
+ -->
+      <!--   <ImageButton
+            android:id="@+id/btnImg_Search"
+            android:layout_width="@dimen/width"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ui_button_gray"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/ico_search" /> -->
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/main_root1"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/offwhite"
+    android:orientation="horizontal"
+    android:padding="0dp"
+    android:layout_above="@+id/line" >
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:tag="bold"
+        android:text="MLCP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tex_size_xlarge"
+        android:textStyle="bold"
+         />
+</LinearLayout>
+</RelativeLayout>

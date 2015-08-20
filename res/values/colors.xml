@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="transparent">#00000000</color>    
+    <color name="white">#ffffff</color>
+    <color name="offwhite">#ece8e1</color>
+    <color name="black">#000000</color>
+    <!-- Gray Colors: extension gray_XXX stand for rgb value 
+    because in gray all of them are equal --> 
+    <color name="gray_215">#d7d4cc</color>   
+    <color name="gray_189">#bdbdbd</color>
+    <color name="gray_167">#a7a7a7</color>
+    <color name="gray_79">#4f4f4f</color>
+    <color name="gray_46">#2e2e2e</color>
+    <color name="gray_35">#232323</color>
+    <color name="gray">#808080</color>
+    <!-- Green Colors -->
+    <color name="green">#1f7f5c</color>
+    <color name="dark_green">#19664a</color>
+    <!-- Red Colors -->
+    <color name="red">#e56c69</color>
+    <color name="dark_red">#b75654</color>
+    <!-- Yellow Colors -->
+    <color name="yellow">#dba571</color>
+    <color name="dark_yellow">#af845a</color>
+    <!-- Blue Colors -->
+    <color name="blue">#5a9aa8</color>
+    <color name="dark_blue">#487b86</color>
+    <!-- Purple Colors -->
+    <color name="purple">#6a5a8c</color>
+    <color name="dark_purple">#554870</color>
+    <!-- Lilac Colors -->
+    <color name="lilac">#8c5d79</color>
+    <color name="dark_lilac">#704a61</color>
+     <!-- Orange Colors -->
+    <color name="orange">#de8650</color>
+    <color name="dark_orange">#c0774b</color>    
+    
+    
+     <color name="word_bar">#FF0000</color>
+    <color name="number_bar">#00FF00</color>
+    
+    <!-- <color name="fmard_green">#058604</color>
+    <color name="efo_green">#0B3900</color> -->
+    
+    <color name="kerala_green">#D6DF22</color>
+    <color name="kerala_dgreen">#166426</color>
+    
+    
+        <color name="light_grey">#D0D0D0</color>
+        <color name="bright_navy_blue">#1974D2</color>
+        <color name="baby_blue">#89CFF0</color>
+        <color name="black_gray">#252625</color>
+        
+        
+        
+        
+    
+</resources>

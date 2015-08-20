@@ -1,0 +1,73 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!-- <style name="AppBaseTheme" parent="Theme.AppCompat.Light"> -->
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    <!-- </style> -->
+
+    <!-- Application theme. -->
+  <!--   <style name="AppTheme" parent="AppBaseTheme"> -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <!--  </style> -->
+
+    
+      <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">0dp</item>
+        <item name="android:windowBackground">@color/offwhite</item>
+    </style>
+    
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Holo.Dialog">
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowCloseOnTouchOutside">true</item>
+</style>
+     <!-- +++++++++++++++++++++ Base Styles +++++++++++++++++++++ -->
+
+
+    <!-- ListView style -->
+    <style name="CustomListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">@color/gray_167</item>
+        <item name="android:divider">@drawable/line</item>
+        <item name="android:dividerHeight">@dimen/divider_size</item>
+    </style>
+     <!-- Button style -->
+    <style name="CustomButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/tex_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/ui_text_selector</item>
+    </style>
+    <!-- <item name="android:cacheColorHint">@color/transparent</item> -->
+    <!-- EditText style -->
+    <style name="CustomEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/tex_size_xlarge</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/dim_10</item>
+    </style>
+     <!-- Grey EditText style -->
+    <style name="EditText_Gray" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_gray</item>
+        <item name="android:textColor">@drawable/ui_text_selector_gray</item>
+    </style>
+     <!-- Blue EditText style -->
+    <style name="EditText_Blue" parent="CustomEditText">
+        <item name="android:background">@drawable/ui_border_blue</item>
+        <item name="android:textColor">@drawable/ui_text_selector_blue</item>
+    </style>
+     <!-- Blue button Style -->
+    <style name="Button_Blue" parent="CustomButton">
+        <item name="android:background">@drawable/ui_button_blue</item>
+    </style>
+       <!-- +++++++++++++++++++++ End of Base Styles +++++++++++++++++++++ -->
+    
+    
+</resources>

@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="@drawable/gradient_blue"
+    android:id="@+id/root">
+  <include
+        android:id="@+id/header"
+        
+        layout="@layout/mainheader_layout_sub" />
+  
+  
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/header"
+         android:id="@+id/header1"
+        >
+
+        <TextView
+            android:id="@+id/lbl_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your slot is:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold" />
+    </LinearLayout>
+  
+  
+  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:background="@drawable/gradient_blue"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/header1"
+     
+        android:id="@+id/header2"
+        >
+
+        <TextView
+
+            android:layout_width="@dimen/dim_20"
+            android:layout_height="wrap_content"
+            android:text="Floor:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold" 
+                android:layout_margin="@dimen/dim_15"
+                
+                android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/lblFloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold"
+            android:layout_weight="0.5" 
+                android:layout_margin="@dimen/dim_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:background="@drawable/gradient_blue"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/header2"
+     android:id="@+id/header3"
+        
+        >
+
+        <TextView
+
+            android:layout_width="@dimen/dim_20"
+            android:layout_height="wrap_content"
+            android:text="Slot:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold" 
+                android:layout_margin="@dimen/dim_15"
+                
+                android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/lblSlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold"
+            android:layout_weight="0.5" 
+                android:layout_margin="@dimen/dim_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:background="@drawable/gradient_blue"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/header3"
+     android:id="@+id/header4"
+        
+        >
+
+        <TextView
+
+            android:layout_width="@dimen/dim_20"
+            android:layout_height="wrap_content"
+            android:text="In time:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold" 
+                android:layout_margin="@dimen/dim_15"
+                
+                android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/lblTimein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold"
+            android:layout_weight="0.5" 
+                android:layout_margin="@dimen/dim_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height"
+        android:background="@drawable/gradient_blue"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/header4"
+     android:id="@+id/header5"
+        
+        >
+
+        <TextView
+
+            android:layout_width="@dimen/dim_20"
+            android:layout_height="wrap_content"
+            android:text="Hours:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold" 
+                android:layout_margin="@dimen/dim_15"
+                
+                android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/lblTimehrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold"
+            android:layout_weight="0.5" 
+                android:layout_margin="@dimen/dim_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        
+     android:layout_alignParentBottom="true"
+          
+        >
+<Button
+android:id="@+id/btnExit"
+
+android:text="Swipe Out"
+
+  android:textColor="@color/white"
+            android:textSize="@dimen/tex_size_xxlarge"
+            android:textStyle="bold"
+android:layout_width="fill_parent"
+android:layout_height="60dp"
+android:background="@drawable/buttonshape"
+android:shadowColor="#A8A8A8"
+android:shadowDx="0"
+android:shadowDy="0"
+android:shadowRadius="5"
+android:enabled="false"
+/>
+     
+    </LinearLayout>
+    
+
+</RelativeLayout>
